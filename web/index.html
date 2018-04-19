@@ -14,37 +14,29 @@ body { background: #2a2a2a; color: #ffffff; padding: 100px; }
 /************************************
   ERC20 Contract ABI
 ************************************/
-var abi = var abi = [ { "constant": true, "inputs": [], "name": "name", "outputs": [ { "name": "", "type": "string" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "approve", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transferFrom", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "INITIAL_SUPPLY", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "decimals", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_subtractedValue", "type": "uint256" } ], "name": "decreaseApproval", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [ { "name": "_owner", "type": "address" } ], "name": "balanceOf", "outputs": [ { "name": "balance", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "symbol", "outputs": [ { "name": "", "type": "string" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transfer", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_addedValue", "type": "uint256" } ], "name": "increaseApproval", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [ { "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" } ], "name": "allowance", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [ { "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "spender", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" } ], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [ { "indexed": true, "name": "from", "type": "address" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" } ], "name": "Transfer", "type": "event" } ];
-
-
+var abi = [ { "constant": true, "inputs": [], "name": "name", "outputs": [ { "name": "", "type": "string" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "approve", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "totalSupply", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_from", "type": "address" }, { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transferFrom", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [], "name": "INITIAL_SUPPLY", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "decimals", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_subtractedValue", "type": "uint256" } ], "name": "decreaseApproval", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [ { "name": "_owner", "type": "address" } ], "name": "balanceOf", "outputs": [ { "name": "balance", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": true, "inputs": [], "name": "symbol", "outputs": [ { "name": "", "type": "string" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "constant": false, "inputs": [ { "name": "_to", "type": "address" }, { "name": "_value", "type": "uint256" } ], "name": "transfer", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": false, "inputs": [ { "name": "_spender", "type": "address" }, { "name": "_addedValue", "type": "uint256" } ], "name": "increaseApproval", "outputs": [ { "name": "", "type": "bool" } ], "payable": false, "stateMutability": "nonpayable", "type": "function" }, { "constant": true, "inputs": [ { "name": "_owner", "type": "address" }, { "name": "_spender", "type": "address" } ], "name": "allowance", "outputs": [ { "name": "", "type": "uint256" } ], "payable": false, "stateMutability": "view", "type": "function" }, { "inputs": [], "payable": false, "stateMutability": "nonpayable", "type": "constructor" }, { "anonymous": false, "inputs": [ { "indexed": true, "name": "owner", "type": "address" }, { "indexed": true, "name": "spender", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" } ], "name": "Approval", "type": "event" }, { "anonymous": false, "inputs": [ { "indexed": true, "name": "from", "type": "address" }, { "indexed": true, "name": "to", "type": "address" }, { "indexed": false, "name": "value", "type": "uint256" } ], "name": "Transfer", "type": "event" } ];
 /**********************
   Contract Methods
 **********************/
-
-
 /******************************************
 - transaction()
 makes contract method calls that create
 transactions
 ******************************************/
 var transaction = function(method, args, callback) {
-
   // contract init
   if (typeof web3 === 'undefined') {
     web3 = new Web3(new Web3.providers.HttpProvider(rpcaddr));
   }
-
   // Instantiate contract object from abi and contract address
   var Contract = web3.eth.contract(abi);
   var contract = Contract.at(dest);
-
   // Transaction default
   var tx = {
     to: contract.address,
     gasLimit: 21000,
     gasPrice: 20000000000
   }
-
   /********************************************
   If 'window.$agent' exists, that means 
   the app is being loaded from Jasonette
@@ -53,14 +45,11 @@ var transaction = function(method, args, callback) {
   *****************************************/
   if (window.$agent) {
     // Since this is being called as a Jasonette agent,
-
     // 1. we are going to use the low level API "getData" to export the transaction
     tx.data = contract[method].getData.apply(this, args)
-
     // 2. respond back to the parent app using '$agent.response'
     $agent.response({ tx: tx })
   }
-
   /********************************************
   No 'window.$agent', therefore it means
   it's just a regular load in a browser
@@ -79,7 +68,6 @@ var transaction = function(method, args, callback) {
     ]))
   }
 }
-
 /******************************************
 - call()
 makes contract method calls that ONLY READ
@@ -87,14 +75,12 @@ from the blockchain and DO NOT create
 transactions
 ******************************************/
 var call = function(method, args, callback) {
-
   // contract init
   if (typeof web3 === 'undefined') {
     web3 = new Web3(new Web3.providers.HttpProvider(rpcaddr));
   }
   var Contract = web3.eth.contract(abi);
   var contract = Contract.at(dest);
-
   contract[method].call.apply(this, args.concat([
     function(err, res) {
       var str = ((typeof res === 'string') ? res : res.toString(10));
@@ -105,25 +91,17 @@ var call = function(method, args, callback) {
     }
   ]))
 }
-
-
 /*****************************************
-
   View Components
-
   1. ReadComponent
     UI Components that only read from Ethereum
-
   2. TxComponent
     UI Components that read AND write from Ethereum
-
   Each of These functions returns a JSON object that 
   describe HTML node, which cell.js than turns
   into the DOM. Check out https://www.celljs.org
   to learn more.
-
 *****************************************/
-
 var ReadComponent = function(o) {
   var method = o.method;
   var params = o.params;
@@ -190,12 +168,8 @@ var TxComponent = function(o) {
     }]
   }
 }
-
-
 /******************************************
-
   Main App
-
 ******************************************/
 /*
 // Mainnet test
@@ -207,7 +181,6 @@ var rpcaddr = "https://mainnet.infura.io"
 // Rinkeby test
 var dest = "0x4dc3b203feffb173d9dced3d8deafedd649a3924";
 var rpcaddr = "https://rinkeby.infura.io"
-
 var app =  {
   $cell: true,
   class: "container",
