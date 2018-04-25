@@ -3,7 +3,7 @@
     "head": {
       "title": "Eth Transaction Sandbox",
       "agents": {
-        "eth": { "url": "https://gliechtenstein.github.io/erc20/mobile/wallet/wallet.html" }
+        "eth": { "url": "https://jaramburu.github.io/wallet-test/mobile/wallet/wallet.html" }
       },
       "actions": {
         "$load": {
