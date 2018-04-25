@@ -62,7 +62,7 @@ var send = function(tx, encryptedWallet, password) {
   ethers.Wallet.fromEncryptedWallet(encryptedWallet, password).then(function(wallet) {
     // now we can use the wallet to sign and broadcast
     // We will use rinkeby network to broadcast
-    var provider = new ethers.providers.InfuraProvider(ethers.providers.networks.rinkeby)
+    var provider = new ethers.providers.InfuraProvider(ethers.providers.networks.ropsten)
     wallet.provider = provider;
 
     // Construct transaction
